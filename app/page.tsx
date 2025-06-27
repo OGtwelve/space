@@ -10,9 +10,121 @@ export default function HomePage() {
             id: 1,
             date: "5月14日 浙江卫视",
             title: "封面故事：算力上天记 一箭十二星 记者现场直击",
-            image: "/placeholder.svg?height=200&width=300",
+            image: "/省级媒体报道/5月14日 浙江卫视 封面故事 算力上天记.png?height=200&width=300",
             pic_pos:"",
-            link:""
+            link:"http://wap.cztv.com/tv/34/2487271.html"
+        },
+        {
+            id: 2,
+            date: "5月14日 浙江卫视",
+            title: "对话之江实验室“三体计算星座”总师李超",
+            image: "/省级媒体报道/5月14日 浙江卫视 对话之江实验室“三体计算星座”总师李超.png?height=200&width=300",
+            pic_pos:"",
+            link:"https://www.cztv.com/newsDetail/787903"
+        },
+        {
+            id: 3,
+            date: "5月14日 浙江卫视",
+            title: "新闻链接：人工智能不能因为缺失算力而缺席太空",
+            image: "/省级媒体报道/5月14日 浙江卫视 新闻链接 人工智能不能因为缺失算力而缺席太空.png?height=200&width=300",
+            pic_pos:"",
+            link:"http://wap.cztv.com/tv/34/2487283.html"
+        },
+        {
+            id: 4,
+            date: "5月14日 浙江卫视",
+            title: "Vlog:我们都是探索天空的人",
+            image: "/省级媒体报道/5月14日 浙江卫视 Vlog我们都是探索天空的人.png?height=200&width=300",
+            pic_pos:"",
+            link:"https://www.cztv.com/video/20019196/wh/horizontal_vod?id=20019196"
+        },
+        {
+            id: 5,
+            date: "5月14日 浙江新闻联播",
+            title: "一箭十二星！太空计算卫星星座即将发射，中国蓝新闻记者直击发射现场",
+            image: "/省级媒体报道/5月14日 浙江新闻联播 一箭十二星 太空计算卫星星座即将发射 中国蓝新闻记者直击发射现场.png?height=200&width=300",
+            pic_pos:"",
+            link:"https://www.cztv.com/newsDetail/787775"
+        },
+        {
+            id: 6,
+            date: "5月14日 新蓝网",
+            title: "全球首个太空计算星座发射入轨 12颗智星把人工智能送上天",
+            image: "/省级媒体报道/5月14日 新蓝网 全球首个太空计算星座发射入轨 12颗智星把人工智能送上天.png?height=200&width=300",
+            pic_pos:"",
+            link:"https://www.cztv.com/newsDetail/787796"
+        },
+        {
+            id: 7,
+            date: "5月14日 浙江在线",
+            title: "算力上天！首批12星成功入轨，“三体计算星座”开启太空计算新时代",
+            image: "/省级媒体报道/5月14日 浙江在线 算力上天 首批12星成功入轨.jpg?height=200&width=300",
+            pic_pos:"",
+            link:"https://zjnews.zjol.com.cn/yc/qmt/202505/t20250514_30994148.shtml"
+        },
+        {
+            id: 8,
+            date: "5月14日 潮新闻App",
+            title: "一箭十二星！太空计算卫星星座成功发射",
+            image: "/省级媒体报道/5月14日 潮新闻App 一箭十二星 太空计算卫星星座成功发射.png?height=200&width=300",
+            pic_pos:"",
+            link:"https://tidenews.com.cn/news.html?id=3123994"
+        },
+        {
+            id: 9,
+            date: "5月14日 浙江之声",
+            title: "一箭十二星！太空计算卫星星座成功发射",
+            image: "/省级媒体报道/5月14日 浙江之声 一箭十二星 太空计算卫星星座成功发射.png?height=200&width=300",
+            pic_pos:"",
+            link:"https://mp.weixin.qq.com/s?__biz=MTYzNTI5ODEwMQ==&mid=2652784249&idx=1&sn=b60fd653b2dd345d609399bdc7763a7d"
+        },
+        {
+            id: 10,
+            date: "5月15日 浙江日报",
+            title: "我国首个整轨互联太空计算星座开始组网",
+            image: "/省级媒体报道/5月15日 浙江日报 我国首个整轨互联太空计算星座开始组网.jpg?height=200&width=300",
+            pic_pos:"",
+            link:"https://zjrb.zjol.com.cn/html/2025-05/15/node_18.htm"
+        },
+        {
+            id: 11,
+            date: "5月16日 南方都市报",
+            title: "算力和AI上天！三体计算星座“天数天算”，太空算力有啥用",
+            image: "/省级媒体报道/5月16日 南方都市报 算力和AI上天.png?height=200&width=300",
+            pic_pos:"",
+            link:"https://baijiahao.baidu.com/s?id=1832238728486664752&wfr=spider&for=pc"
+        },
+        {
+            id: 12,
+            date: "5月17日 新蓝网",
+            title: "中国蓝观察丨“三体计算星座”发射升空 之江实验室为太空装上“AI大脑”",
+            image: "/省级媒体报道/5月17日 新蓝网 中国蓝观察.png?height=200&width=300",
+            pic_pos:"",
+            link:"https://baijiahao.baidu.com/s?id=1832365243618790181&wfr=spider&for=pc"
+        },
+        {
+            id: 13,
+            date: "5月17日 浙江日报",
+            title: "把人工智能送上太空 之江实验室牵头组建我国首个整轨互联太空计算星座",
+            image: "/省级媒体报道/5月17日 浙江日报 把人工智能送上太空.jpg?height=200&width=300",
+            pic_pos:"",
+            link:"https://zjrb.zjol.com.cn/html/2025-05/17/content_3822706.htm?div=-1"
+        },
+        {
+            id: 14,
+            date: "6月12日 四川在线",
+            title: "之江实验室主任王坚：未来可能会把人工智能运用到太空中",
+            image: "/省级媒体报道/6月12日 四川在线 之江实验室主任王坚.png?height=200&width=300",
+            pic_pos:"",
+            link:"https://sichuan.scol.com.cn/ggxw/202506/83063371.html"
+        },
+        {
+            id: 15,
+            date: "6月18日 浙江日报",
+            title: "之江实验室“三体计算星座”上天满月太空算网，如何织造",
+            image: "/省级媒体报道/6月18日 浙江日报 之江实验室三体计算星座上天满月太空算网.jpg?height=200&width=300",
+            pic_pos:"",
+            link:"https://zjrb.zjol.com.cn/html/2025-06/18/content_3829850.htm?div=-1"
         },
     ]
 
@@ -317,37 +429,45 @@ export default function HomePage() {
                     <h2 className="text-4xl font-bold text-center text-gray-900 mb-16">省级媒体报道</h2>
                     <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
                         {provincialNews.map((item) => (
-                            <Card key={item.id}
-                                  className="group hover:shadow-xl transition-all duration-300 cursor-pointer">
-                                <CardContent className="p-0">
-                                    <div className="relative overflow-hidden rounded-t-lg">
-                                        <Image
-                                            src={item.image || "/placeholder.svg"}
-                                            alt={item.title}
-                                            width={300}
-                                            height={200}
-                                            style={{
-                                                // 把 pic_pos 中的 "_" 换成空格，得到 "center 1rem"
-                                                objectPosition: item?.pic_pos.replace(/_/g, ' ')
-                                            }}
-                                            className="w-full h-48 object-cover object-top group-hover:scale-105 transition-transform duration-300"
-                                        />
-                                    </div>
-                                    <div className="p-4 space-y-3">
-                                        <p className="text-sm text-blue-600 font-medium">{item.date}</p>
-                                        <h3 className="max-h-[2.5rem] text-sm font-medium text-gray-900 leading-tight line-clamp-2 group-hover:text-blue-600 transition-colors">
-                                            {item.link ? (
-                                                <a href={item.link} target="_blank" rel="noopener noreferrer"
-                                                   className="hover:underline">
-                                                    {item.title}
-                                                </a>
-                                            ) : (
-                                                item.title
-                                            )}
-                                        </h3>
-                                    </div>
-                                </CardContent>
-                            </Card>
+                            <a
+                                key={item.id}
+                                href={item.link}
+                                target="_blank"
+                                rel="noopener noreferrer"
+                                className="block group hover:shadow-xl transition-all duration-300 cursor-pointer"
+                            >
+                                <Card key={item.id}
+                                      className="group hover:shadow-xl transition-all duration-300 cursor-pointer">
+                                    <CardContent className="p-0">
+                                        <div className="relative overflow-hidden rounded-t-lg">
+                                            <Image
+                                                src={item.image || "/placeholder.svg"}
+                                                alt={item.title}
+                                                width={300}
+                                                height={200}
+                                                style={{
+                                                    // 把 pic_pos 中的 "_" 换成空格，得到 "center 1rem"
+                                                    objectPosition: item?.pic_pos.replace(/_/g, ' ')
+                                                }}
+                                                className="w-full h-48 object-cover object-top group-hover:scale-105 transition-transform duration-300"
+                                            />
+                                        </div>
+                                        <div className="p-4 space-y-3 h-[6rem]">
+                                            <p className="text-sm text-blue-600 font-medium">{item.date}</p>
+                                            <h3 className="max-h-[2.5rem] text-sm font-medium text-gray-900 leading-tight line-clamp-2 group-hover:text-blue-600 transition-colors">
+                                                {item.link ? (
+                                                    <a href={item.link} target="_blank" rel="noopener noreferrer"
+                                                       className="hover:underline">
+                                                        {item.title}
+                                                    </a>
+                                                ) : (
+                                                    item.title
+                                                )}
+                                            </h3>
+                                        </div>
+                                    </CardContent>
+                                </Card>
+                            </a>
                         ))}
                     </div>
                     <div className="text-center mt-12">
