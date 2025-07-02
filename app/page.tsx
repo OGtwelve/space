@@ -353,7 +353,7 @@ export default function HomePage() {
                                 共同探索太空计算的无限可能
                             </h3>
                             {/* 联系我们 */}
-                            <div className="flex flex-col items-center !ml-4">
+                            <div className="flex flex-col items-center lg:ml-4">
                                 {/* 二维码 */}
                                 <div className="w-24 h-24 mt-10">
                                     <Image
