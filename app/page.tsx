@@ -308,64 +308,54 @@ export default function HomePage() {
                     />
                 </div>
 
-                <div className="relative container mx-auto px-4 py-36">
-                    <div className="grid lg:grid-cols-2 gap-12 items-center">
+                <div className="relative container mx-auto px-4 sm:px-6 py-20 lg:py-36">
+                    <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-12 items-center">
+                {/*<div className="relative container mx-auto px-4 py-36">*/}
+                {/*    <div className="grid lg:grid-cols-2 gap-12 items-center">*/}
                         {/*<div className="space-y-8 text-white">*/}
-                        <div className="flex flex-col items-center space-y-4 lg:space-y-6 text-white">
+                        {/*<div className="flex flex-col items-center space-y-4 lg:space-y-6 text-white">*/}
+                        <div className="flex flex-col items-center space-y-2 sm:space-y-4 lg:space-y-6 text-white">
                             {/*<div className="flex flex-col items-center space-y-8 text-white">*/}
-                            <h1 className="text-[2.6rem] lg:text-[4.3rem] font-bold leading-tight whitespace-nowrap">
+                            <h1 className="text-2xl sm:text-[2.6rem] lg:text-[4.3rem] font-bold leading-tight whitespace-normal sm:whitespace-nowrap text-center">
                                 “三体计算星座”首次发射
                             </h1>
-                            <h1 className="text-[2.6rem] lg:text-[4.3rem] font-bold leading-tight whitespace-nowrap">
+                            <h1 className="text-2xl sm:text-[2.6rem] lg:text-[4.3rem] font-bold leading-tight whitespace-normal sm:whitespace-nowrap text-center">
                                 媒体相关报道
                             </h1>
 
-                            <h3 className="text-[1.4rem] lg:text-[1.4rem] font-bold leading-tight whitespace-nowrap">
+                            <h3 className="text-base sm:text-[1.25rem] lg:text-[1.4rem] font-bold leading-tight text-center">
                                 “三体计算星座” 目标：1000颗计算卫星或E规模的算力
                             </h3>
-                            <h3 className="text-[1.4rem] lg:text-[1.4rem] font-bold leading-tight whitespace-nowrap">
+                            <h3 className="text-base sm:text-[1.25rem] lg:text-[1.4rem] font-bold leading-tight text-center">
                                 诚邀全球伙伴共建“三体计算星座”
                             </h3>
-                            <h3 className="text-[1.4rem] lg:text-[1.4rem] font-bold leading-tight whitespace-nowrap">
+                            <h3 className="text-base sm:text-[1.25rem] lg:text-[1.4rem] font-bold leading-tight text-center">
                                 共同探索太空计算的无限可能
                             </h3>
-                            <div className="flex flex-wrap gap-24">
+                            <div className="!mt-10 flex flex-wrap justify-center gap-4 sm:gap-8 lg:gap-24">
                                 <Button
                                     size="lg"
-                                    className="
-                                      transform scale-[1.35]    /* 放大 115% */
-                                      bg-blue-600 hover:bg-blue-700
-                                      text-white
-                                      px-8 py-4 text-lg
-                                      mt-10
-                                    "
+                                    className="transform scale-100 sm:scale-[1.15] lg:scale-[1.35] bg-blue-600 hover:bg-blue-700 text-white px-6 sm:px-8 py-2 sm:py-4 text-sm sm:text-lg"
                                     onClick={() => document.getElementById("national")?.scrollIntoView({behavior: "smooth"})}
                                 >
                                     国家级媒体报道
                                 </Button>
                                 <Button
                                     size="lg"
-                                    className="
-                                      transform scale-[1.35]
-                                      bg-blue-600 hover:bg-blue-700
-                                      text-white
-                                      px-8 py-4 text-lg
-                                      mt-10
-                                    "
+                                    className="transform scale-100 sm:scale-[1.15] lg:scale-[1.35] bg-blue-600 hover:bg-blue-700 text-white px-6 sm:px-8 py-2 sm:py-4 text-sm sm:text-lg"
                                     onClick={() => document.getElementById("provincial")?.scrollIntoView({behavior: "smooth"})}
                                 >
                                     省级媒体报道
                                 </Button>
                             </div>
                             {/* 联系我们 */}
-                            <div className="flex flex-col items-center mt-16">
+                            <div className="flex flex-col items-center mt-8 sm:mt-12">
                                 {/* 二维码 */}
                                 <div className="w-24 h-24 mt-14">
                                     <Image
                                         src="/homepage_qrcode.png"
                                         alt="联系我们二维码"
-                                        width={100}
-                                        height={100}
+                                        width={80} height={80}
                                         className="w-full h-full object-contain"
                                     />
                                 </div>
@@ -373,7 +363,7 @@ export default function HomePage() {
                                 <p className="mt-2 text-white text-lg">联系我们</p>
                             </div>
                         </div>
-                        <div className="relative w-4/5 mx-auto">
+                        <div className="relative w-full lg:w-4/5 mx-auto mt-8 lg:mt-0">
                             <div className="relative rounded-2xl overflow-hidden shadow-2xl">
                                 <Image
                                     src="/封面图片/前景.jpg"
