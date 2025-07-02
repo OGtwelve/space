@@ -311,7 +311,7 @@ export default function HomePage() {
                 <div className="relative container mx-auto px-4 py-36">
                     <div className="grid lg:grid-cols-2 gap-12 items-center">
                         {/*<div className="space-y-8 text-white">*/}
-                        <div className="flex flex-col items-center space-y-8 lg:space-y-12 text-white">
+                        <div className="flex flex-col items-center space-y-4 lg:space-y-6 text-white">
                             {/*<div className="flex flex-col items-center space-y-8 text-white">*/}
                             <h1 className="text-[2.6rem] lg:text-[4.3rem] font-bold leading-tight whitespace-nowrap">
                                 “三体计算星座”首次发射
@@ -320,9 +320,15 @@ export default function HomePage() {
                                 媒体相关报道
                             </h1>
 
-                            {/*<p className="text-xl lg:text-2xl text-blue-100 leading-relaxed">*/}
-                            {/*  太空计算卫星星座成功发射，将人工智能送上太空*/}
-                            {/*</p>*/}
+                            <h3 className="text-[1.4rem] lg:text-[1.4rem] font-bold leading-tight whitespace-nowrap">
+                                “三体计算星座” 目标：1000颗计算卫星或E规模的算力
+                            </h3>
+                            <h3 className="text-[1.4rem] lg:text-[1.4rem] font-bold leading-tight whitespace-nowrap">
+                                诚邀全球伙伴共建“三体计算星座”
+                            </h3>
+                            <h3 className="text-[1.4rem] lg:text-[1.4rem] font-bold leading-tight whitespace-nowrap">
+                                共同探索太空计算的无限可能
+                            </h3>
                             <div className="flex flex-wrap gap-24">
                                 <Button
                                     size="lg"
@@ -331,7 +337,7 @@ export default function HomePage() {
                                       bg-blue-600 hover:bg-blue-700
                                       text-white
                                       px-8 py-4 text-lg
-                                      mt-20
+                                      mt-10
                                     "
                                     onClick={() => document.getElementById("national")?.scrollIntoView({behavior: "smooth"})}
                                 >
@@ -344,12 +350,27 @@ export default function HomePage() {
                                       bg-blue-600 hover:bg-blue-700
                                       text-white
                                       px-8 py-4 text-lg
-                                      mt-20
+                                      mt-10
                                     "
                                     onClick={() => document.getElementById("provincial")?.scrollIntoView({behavior: "smooth"})}
                                 >
                                     省级媒体报道
                                 </Button>
+                            </div>
+                            {/* 联系我们 */}
+                            <div className="flex flex-col items-center mt-16">
+                                {/* 二维码 */}
+                                <div className="w-24 h-24 mt-14">
+                                    <Image
+                                        src="/homepage_qrcode.png"
+                                        alt="联系我们二维码"
+                                        width={100}
+                                        height={100}
+                                        className="w-full h-full object-contain"
+                                    />
+                                </div>
+                                {/* 文字 */}
+                                <p className="mt-2 text-white text-lg">联系我们</p>
                             </div>
                         </div>
                         <div className="relative w-4/5 mx-auto">
@@ -399,14 +420,7 @@ export default function HomePage() {
                                         <div className="p-4 space-y-3 h-[6rem]">
                                             <p className="text-sm text-blue-600 font-medium">{item.date}</p>
                                             <h3 className="max-h-[2.5rem] text-sm font-medium text-gray-900 leading-tight line-clamp-2 group-hover:text-blue-600 transition-colors">
-                                                {item.link ? (
-                                                    <a href={item.link} target="_blank" rel="noopener noreferrer"
-                                                       className="hover:underline">
-                                                        {item.title}
-                                                    </a>
-                                                ) : (
-                                                    item.title
-                                                )}
+                                                {item.title}
                                             </h3>
                                         </div>
                                     </CardContent>
@@ -455,14 +469,7 @@ export default function HomePage() {
                                         <div className="p-4 space-y-3 h-[6rem]">
                                             <p className="text-sm text-blue-600 font-medium">{item.date}</p>
                                             <h3 className="max-h-[2.5rem] text-sm font-medium text-gray-900 leading-tight line-clamp-2 group-hover:text-blue-600 transition-colors">
-                                                {item.link ? (
-                                                    <a href={item.link} target="_blank" rel="noopener noreferrer"
-                                                       className="hover:underline">
-                                                        {item.title}
-                                                    </a>
-                                                ) : (
-                                                    item.title
-                                                )}
+                                                {item.title}
                                             </h3>
                                         </div>
                                     </CardContent>
