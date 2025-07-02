@@ -3,8 +3,12 @@
 import Image from "next/image"
 import {Button} from "@/components/ui/button"
 import {Card, CardContent} from "@/components/ui/card"
+import { useState } from 'react'
+
 
 export default function HomePage() {
+    const [readerUrl, setReaderUrl] = useState<string | null>(null)
+
     const provincialNews = [
         {
             id: 1,
@@ -323,16 +327,10 @@ export default function HomePage() {
                                 媒体相关报道
                             </h1>
 
-                            <h3 className="text-base sm:text-[1.25rem] lg:text-[1.4rem] font-bold leading-tight text-center">
+                            <h1 className="text-base sm:text-[1.8rem] lg:text-[2rem] font-bold leading-tight text-center">
                                 “三体计算星座” 目标：1000颗计算卫星或E规模的算力
-                            </h3>
-                            <h3 className="text-base sm:text-[1.25rem] lg:text-[1.4rem] font-bold leading-tight text-center">
-                                诚邀全球伙伴共建“三体计算星座”
-                            </h3>
-                            <h3 className="text-base sm:text-[1.25rem] lg:text-[1.4rem] font-bold leading-tight text-center">
-                                共同探索太空计算的无限可能
-                            </h3>
-                            <div className="!mt-10 flex flex-wrap justify-center gap-4 sm:gap-8 lg:gap-24">
+                            </h1>
+                            <div className="!mt-10 !mb-5 flex flex-wrap justify-center gap-4 sm:gap-8 lg:gap-24">
                                 <Button
                                     size="lg"
                                     className="transform scale-100 sm:scale-[1.15] lg:scale-[1.35] bg-blue-600 hover:bg-blue-700 text-white px-6 sm:px-8 py-2 sm:py-4 text-sm sm:text-lg"
@@ -348,10 +346,16 @@ export default function HomePage() {
                                     省级媒体报道
                                 </Button>
                             </div>
+                            <h3 className="text-base sm:text-[1.25rem] lg:text-[1.4rem] font-bold leading-tight text-center">
+                                诚邀全球伙伴共建“三体计算星座”
+                            </h3>
+                            <h3 className="text-base sm:text-[1.25rem] lg:text-[1.4rem] font-bold leading-tight text-center">
+                                共同探索太空计算的无限可能
+                            </h3>
                             {/* 联系我们 */}
-                            <div className="flex flex-col items-center mt-8 sm:mt-12">
+                            <div className="flex flex-col items-center !ml-4">
                                 {/* 二维码 */}
-                                <div className="w-24 h-24 mt-14">
+                                <div className="w-24 h-24 mt-10">
                                     <Image
                                         src="/homepage_qrcode.png"
                                         alt="联系我们二维码"
@@ -383,6 +387,17 @@ export default function HomePage() {
                 <div className="container mx-auto px-4">
                     <h2 className="text-4xl font-bold text-center text-gray-900 mb-16">国家级媒体报道</h2>
                     <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
+                        {/*{nationalNews.map(item => (*/}
+                        {/*    <div*/}
+                        {/*        key={item.id}*/}
+                        {/*        className="block group hover:shadow-xl … cursor-pointer"*/}
+                        {/*        onClick={e => {*/}
+                        {/*            e.preventDefault()*/}
+                        {/*            setReaderUrl(item.link)*/}
+                        {/*        }}*/}
+                        {/*    >*/}
+                        {/*    </div>*/}
+                        {/*))}*/}
                         {nationalNews.map((item) => (
                             <a
                                 key={item.id}
@@ -546,6 +561,23 @@ export default function HomePage() {
                     </div>
                 </div>
             </footer>
+            {/*{readerUrl && (*/}
+            {/*    <div className="fixed inset-0 z-50 flex items-center justify-center bg-black/50">*/}
+            {/*        <div className="relative w-[90vw] h-[90vh] bg-white rounded-lg overflow-hidden shadow-2xl">*/}
+            {/*            <button*/}
+            {/*                onClick={() => setReaderUrl(null)}*/}
+            {/*                className="absolute top-2 right-2 z-10 p-2 bg-black/30 rounded-full text-white"*/}
+            {/*            >*/}
+            {/*                ✕*/}
+            {/*            </button>*/}
+            {/*            <iframe*/}
+            {/*                src={readerUrl}*/}
+            {/*                className="w-full h-full"*/}
+            {/*                sandbox="allow-scripts allow-same-origin allow-forms"*/}
+            {/*            />*/}
+            {/*        </div>*/}
+            {/*    </div>*/}
+            {/*)}*/}
         </div>
     )
 }
