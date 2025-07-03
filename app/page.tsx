@@ -503,6 +503,7 @@ export default function HomePage() {
                                     <CardContent className="p-0">
                                         <div className="relative overflow-hidden rounded-t-lg">
                                             <Image
+                                                priority={true}
                                                 src={item.image || "/placeholder.svg"}
                                                 alt={item.title}
                                                 width={300}
@@ -568,6 +569,7 @@ export default function HomePage() {
                                     <CardContent className="p-0">
                                         <div className="relative overflow-hidden rounded-t-lg">
                                             <Image
+                                                priority={true}
                                                 src={item.image || "/placeholder.svg"}
                                                 alt={item.title}
                                                 width={300}
