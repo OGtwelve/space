@@ -12,6 +12,8 @@ export default function HomePage() {
         ifDocument?: boolean
         ifVideo?: boolean
         videoPath?: string
+        ifArticle?:  boolean
+        articleId?:  number
     }
 
     const [readerPayload, setReaderPayload] =
@@ -28,121 +30,170 @@ export default function HomePage() {
             id: 1,
             date: "5月14日 浙江卫视",
             title: "封面故事：算力上天记 一箭十二星 记者现场直击",
-            image: "/省级媒体报道/5月14日 浙江卫视 封面故事 算力上天记.png?height=200&width=300",
+            image: "/provincial/5月14日 浙江卫视 封面故事 算力上天记.png?height=200&width=300",
             pic_pos:"",
-            link:"http://wap.cztv.com/tv/34/2487271.html"
+            link:"http://wap.cztv.com/tv/34/2487271.html",
+            ifDocument: false,
+            ifVideo: true,
+            videoPath: "/videos/video3.mp4",
+            ifArticle: false,articleId:undefined
         },
         {
             id: 2,
             date: "5月14日 浙江卫视",
             title: "对话之江实验室“三体计算星座”总师李超",
-            image: "/省级媒体报道/5月14日 浙江卫视 对话之江实验室“三体计算星座”总师李超.png?height=200&width=300",
+            image: "/provincial/5月14日 浙江卫视 对话之江实验室“三体计算星座”总师李超.png?height=200&width=300",
             pic_pos:"",
-            link:"https://www.cztv.com/newsDetail/787903"
+            link:"https://www.cztv.com/newsDetail/787903",
+            ifDocument: true,
+            ifVideo: false,
+            ifArticle: false,articleId:undefined
         },
         {
             id: 3,
             date: "5月14日 浙江卫视",
             title: "新闻链接：人工智能不能因为缺失算力而缺席太空",
-            image: "/省级媒体报道/5月14日 浙江卫视 新闻链接 人工智能不能因为缺失算力而缺席太空.png?height=200&width=300",
+            image: "/provincial/5月14日 浙江卫视 新闻链接 人工智能不能因为缺失算力而缺席太空.png?height=200&width=300",
             pic_pos:"",
-            link:"http://wap.cztv.com/tv/34/2487283.html"
+            link:"http://wap.cztv.com/tv/34/2487283.html",
+            ifDocument: false,
+            ifVideo: true,
+            videoPath: "/videos/video4.mp4",
+            ifArticle: false,articleId:undefined
         },
         {
             id: 4,
             date: "5月14日 浙江卫视",
             title: "Vlog:我们都是探索天空的人",
-            image: "/省级媒体报道/5月14日 浙江卫视 Vlog我们都是探索天空的人.png?height=200&width=300",
+            image: "/provincial/5月14日 浙江卫视 Vlog我们都是探索天空的人.png?height=200&width=300",
             pic_pos:"",
-            link:"https://www.cztv.com/video/20019196/wh/horizontal_vod?id=20019196"
+            link:"https://www.cztv.com/video/20019196/wh/horizontal_vod?id=20019196",
+            ifDocument: false,
+            ifVideo: true,
+            videoPath: "/videos/video5.mp4",
+            ifArticle: false,articleId:undefined
         },
         {
             id: 5,
             date: "5月14日 浙江新闻联播",
             title: "一箭十二星！太空计算卫星星座即将发射，中国蓝新闻记者直击发射现场",
-            image: "/省级媒体报道/5月14日 浙江新闻联播 一箭十二星 太空计算卫星星座即将发射 中国蓝新闻记者直击发射现场.png?height=200&width=300",
+            image: "/provincial/5月14日 浙江新闻联播 一箭十二星 太空计算卫星星座即将发射 中国蓝新闻记者直击发射现场.png?height=200&width=300",
             pic_pos:"",
-            link:"https://www.cztv.com/newsDetail/787775"
+            link:"https://www.cztv.com/newsDetail/787775",
+            ifDocument: true,
+            ifVideo: false,
+            ifArticle: false,articleId:undefined
         },
         {
             id: 6,
             date: "5月14日 新蓝网",
             title: "全球首个太空计算星座发射入轨 12颗智星把人工智能送上天",
-            image: "/省级媒体报道/5月14日 新蓝网 全球首个太空计算星座发射入轨 12颗智星把人工智能送上天.png?height=200&width=300",
+            image: "/provincial/5月14日 新蓝网 全球首个太空计算星座发射入轨 12颗智星把人工智能送上天.png?height=200&width=300",
             pic_pos:"",
-            link:"https://www.cztv.com/newsDetail/787796"
+            link:"https://www.cztv.com/newsDetail/787796",
+            ifDocument: true,
+            ifVideo: false,
+            ifArticle: false,articleId:undefined
         },
         {
             id: 7,
             date: "5月14日 浙江在线",
             title: "算力上天！首批12星成功入轨，“三体计算星座”开启太空计算新时代",
-            image: "/省级媒体报道/5月14日 浙江在线 算力上天 首批12星成功入轨.jpg?height=200&width=300",
+            image: "/provincial/5月14日 浙江在线 算力上天 首批12星成功入轨.jpg?height=200&width=300",
             pic_pos:"",
-            link:"https://zjnews.zjol.com.cn/yc/qmt/202505/t20250514_30994148.shtml"
+            link:"https://zjnews.zjol.com.cn/yc/qmt/202505/t20250514_30994148.shtml",
+            ifDocument: true,
+            ifVideo: false,
+            ifArticle: false,articleId:undefined
         },
         {
             id: 8,
             date: "5月14日 潮新闻App",
             title: "一箭十二星！太空计算卫星星座成功发射",
-            image: "/省级媒体报道/5月14日 潮新闻App 一箭十二星 太空计算卫星星座成功发射.png?height=200&width=300",
+            image: "/provincial/5月14日 潮新闻App 一箭十二星 太空计算卫星星座成功发射.png?height=200&width=300",
             pic_pos:"",
-            link:"https://tidenews.com.cn/news.html?id=3123994"
+            link:"https://tidenews.com.cn/news.html?id=3123994",
+            ifDocument: true,
+            ifVideo: false,
+            ifArticle: false,articleId:undefined
         },
         {
             id: 9,
             date: "5月14日 浙江之声",
             title: "一箭十二星！太空计算卫星星座成功发射",
-            image: "/省级媒体报道/5月14日 浙江之声 一箭十二星 太空计算卫星星座成功发射.png?height=200&width=300",
+            image: "/provincial/5月14日 浙江之声 一箭十二星 太空计算卫星星座成功发射.png?height=200&width=300",
             pic_pos:"",
-            link:"https://mp.weixin.qq.com/s?__biz=MTYzNTI5ODEwMQ==&mid=2652784249&idx=1&sn=b60fd653b2dd345d609399bdc7763a7d"
+            link:"https://mp.weixin.qq.com/s?__biz=MTYzNTI5ODEwMQ==&mid=2652784249&idx=1&sn=b60fd653b2dd345d609399bdc7763a7d",
+            ifDocument: false,
+            ifVideo: false,
+            ifArticle: true,
+            articleId: 1
         },
         {
             id: 10,
             date: "5月15日 浙江日报",
             title: "我国首个整轨互联太空计算星座开始组网",
-            image: "/省级媒体报道/5月15日 浙江日报 我国首个整轨互联太空计算星座开始组网.jpg?height=200&width=300",
+            image: "/provincial/5月15日 浙江日报 我国首个整轨互联太空计算星座开始组网.jpg?height=200&width=300",
             pic_pos:"",
-            link:"https://zjrb.zjol.com.cn/html/2025-05/15/node_18.htm"
+            link:"https://zjrb.zjol.com.cn/html/2025-05/15/node_18.htm",
+            ifDocument: true,
+            ifVideo: false,
+            ifArticle: false,articleId:undefined
         },
         {
             id: 11,
             date: "5月16日 南方都市报",
             title: "算力和AI上天！三体计算星座“天数天算”，太空算力有啥用",
-            image: "/省级媒体报道/5月16日 南方都市报 算力和AI上天.png?height=200&width=300",
+            image: "/provincial/5月16日 南方都市报 算力和AI上天.png?height=200&width=300",
             pic_pos:"",
-            link:"https://baijiahao.baidu.com/s?id=1832238728486664752&wfr=spider&for=pc"
+            link:"https://baijiahao.baidu.com/s?id=1832238728486664752&wfr=spider&for=pc",
+            ifDocument: true,
+            ifVideo: false,
+            ifArticle: false,articleId:undefined
         },
         {
             id: 12,
             date: "5月17日 新蓝网",
             title: "中国蓝观察丨“三体计算星座”发射升空 之江实验室为太空装上“AI大脑”",
-            image: "/省级媒体报道/5月17日 新蓝网 中国蓝观察.png?height=200&width=300",
+            image: "/provincial/5月17日 新蓝网 中国蓝观察.png?height=200&width=300",
             pic_pos:"",
-            link:"https://baijiahao.baidu.com/s?id=1832365243618790181&wfr=spider&for=pc"
+            link:"https://baijiahao.baidu.com/s?id=1832365243618790181&wfr=spider&for=pc",
+            ifDocument: true,
+            ifVideo: false,
+            ifArticle: false,articleId:undefined
         },
         {
             id: 13,
             date: "5月17日 浙江日报",
             title: "把人工智能送上太空 之江实验室牵头组建我国首个整轨互联太空计算星座",
-            image: "/省级媒体报道/5月17日 浙江日报 把人工智能送上太空.jpg?height=200&width=300",
+            image: "/provincial/5月17日 浙江日报 把人工智能送上太空.jpg?height=200&width=300",
             pic_pos:"",
-            link:"https://zjrb.zjol.com.cn/html/2025-05/17/content_3822706.htm?div=-1"
+            link:"https://zjrb.zjol.com.cn/html/2025-05/17/content_3822706.htm?div=-1",
+            ifDocument: true,
+            ifVideo: false,
+            ifArticle: false,articleId:undefined
         },
         {
             id: 14,
             date: "6月12日 四川在线",
             title: "之江实验室主任王坚：未来可能会把人工智能运用到太空中",
-            image: "/省级媒体报道/6月12日 四川在线 之江实验室主任王坚.png?height=200&width=300",
+            image: "/provincial/6月12日 四川在线 之江实验室主任王坚.png?height=200&width=300",
             pic_pos:"",
-            link:"https://sichuan.scol.com.cn/ggxw/202506/83063371.html"
+            link:"https://sichuan.scol.com.cn/ggxw/202506/83063371.html",
+            ifDocument: true,
+            ifVideo: false,
+            ifArticle: false,articleId:undefined
         },
         {
             id: 15,
             date: "6月18日 浙江日报",
             title: "之江实验室“三体计算星座”上天满月太空算网，如何织造",
-            image: "/省级媒体报道/6月18日 浙江日报 之江实验室三体计算星座上天满月太空算网.jpg?height=200&width=300",
+            image: "/provincial/6月18日 浙江日报 之江实验室三体计算星座上天满月太空算网.jpg?height=200&width=300",
             pic_pos:"",
-            link:"https://zjrb.zjol.com.cn/html/2025-06/18/content_3829850.htm?div=-1"
+            link:"https://zjrb.zjol.com.cn/html/2025-06/18/content_3829850.htm?div=-1",
+            ifDocument: true,
+            ifVideo: false,
+            ifArticle: false,articleId:undefined
         },
     ]
 
@@ -151,173 +202,189 @@ export default function HomePage() {
             id: 1,
             date: "5月14日 新华社",
             title: "将人工智能送上太空！我国太空计算卫星星座成功发射",
-            image: "/国家级媒体报道/5月14日新华社将人工智能送上太空.png?height=200&width=300",
+            image: "/national/5月14日新华社将人工智能送上太空.png?height=200&width=300",
             pic_pos: "center_-2.5rem",
             link: "https://xhpfmapi.xinhuaxmt.com/vh512/share/12540062",
             ifDocument: true,
-            ifVideo: false
+            ifVideo: false,
+            ifArticle: false,articleId:undefined
         },
         {
             id: 2,
             date: "5月14日 东方时空",
             title: "太空算力“高”在哪儿？技术突破 12颗卫星“各怀绝技”",
-            image: "/国家级媒体报道/5月14日 东方时空 太空算力高在哪儿.png?height=200&width=300",
+            image: "/national/5月14日 东方时空 太空算力高在哪儿.png?height=200&width=300",
             pic_pos: "",
             link: "https://tv.cctv.com/2025/05/14/VIDEGYdvkgbU9lMKko2sZgZk250514.shtml",
             ifDocument: false,
             ifVideo: true,
-            videoPath: "/videos/video1.mp4"
+            videoPath: "/videos/video1.mp4",
+            ifArticle: false,articleId:undefined
         },
         {
             id: 3,
             date: "5月14日 中国新闻网",
             title: "中国成功发射太空计算卫星星座",
-            image: "/国家级媒体报道/5月14日 中国新闻网 中国成功发射太空计算卫星星座.jpg?height=200&width=300",
+            image: "/national/5月14日 中国新闻网 中国成功发射太空计算卫星星座.jpg?height=200&width=300",
             pic_pos: "",
             link: "https://www.chinanews.com.cn/gn/2025/05-14/10415282.shtml",
             ifDocument: true,
-            ifVideo: false
+            ifVideo: false,
+            ifArticle: false,articleId:undefined
         },
         {
             id: 4,
             date: "5月14日 央视新闻",
             title: "将AI送上太空 我国成功发射全球首个太空计算卫星星座",
-            image: "/国家级媒体报道/5月14日 央视新闻 将AI送上太空 我国成功发射全球首个太空计算卫星星座.jpg?height=200&width=300",
+            image: "/national/5月14日 央视新闻 将AI送上太空 我国成功发射全球首个太空计算卫星星座.jpg?height=200&width=300",
             pic_pos: "",
             link: "https://news.cctv.cn/2025/05/14/ARTIUZdgvS22TlXHq8tT9YP9250514.shtml",
             ifDocument: true,
-            ifVideo: false
+            ifVideo: false,
+            ifArticle: false,articleId:undefined
         },
         {
             id: 5,
             date: "5月15日 中国科学报",
             title: "把人工智能送上天！“三体计算星座”首发奏凯",
-            image: "/国家级媒体报道/5月15日 中国科学报 把人工智能送上天.png?height=200&width=300",
+            image: "/national/5月15日 中国科学报 把人工智能送上天.png?height=200&width=300",
             pic_pos: "",
             link: "https://baijiahao.baidu.com/s?id=1832268525217580154&wfr=spider&for=pc",
             ifDocument: true,
-            ifVideo: false
+            ifVideo: false,
+            ifArticle: false,articleId:undefined
         }
         ,
         {
             id: 6,
             date: "5月15日 人民日报",
             title: "我国整轨互联太空计算星座正式进入组网阶段",
-            image: "/国家级媒体报道/5月15日 人民日报 我国整轨互联太空计算星座正式进入组网阶段.png?height=200&width=300",
+            image: "/national/5月15日 人民日报 我国整轨互联太空计算星座正式进入组网阶段.png?height=200&width=300",
             pic_pos: "",
             link: "https://paper.people.com.cn/rmrb/pc/content/202505/15/content_30073253.html",
             ifDocument: true,
-            ifVideo: false
+            ifVideo: false,
+            ifArticle: false,articleId:undefined
         }
         ,
         {
             id: 7,
             date: "5月15日 人民日报海外版",
             title: "中国首个太空计算星座进入组网阶段",
-            image: "/国家级媒体报道/5月15日 人民日报 我国整轨互联太空计算星座正式进入组网阶段.png?height=200&width=300",
+            image: "/national/5月15日 人民日报 我国整轨互联太空计算星座正式进入组网阶段.png?height=200&width=300",
             pic_pos: "",
             link: "https://paper.people.com.cn/rmrbhwb/pc/content/202505/15/content_30073159.html",
             ifDocument: true,
-            ifVideo: false
+            ifVideo: false,
+            ifArticle: false,articleId:undefined
         }
         ,
         {
             id: 8,
             date: "5月15日 光明日报",
             title: "一箭十二星，把算力送到太空——太空计算卫星星座成功发射",
-            image: "/国家级媒体报道/5月15日 光明日报 一箭十二星 把算力送到太空.png?height=200&width=300",
+            image: "/national/5月15日 光明日报 一箭十二星 把算力送到太空.png?height=200&width=300",
             pic_pos: "",
             link: "https://epaper.gmw.cn/gmrb/html/2025-05/15/nw.D110000gmrb_20250515_1-08.htm",
             ifDocument: true,
-            ifVideo: false
+            ifVideo: false,
+            ifArticle: false,articleId:undefined
         }
         ,
         {
             id: 9,
             date: "5月15日 央视新闻",
             title: "首个太空计算卫星星座成功入轨 中国星座点亮“AI”星云",
-            image: "/国家级媒体报道/5月15日 央视新闻 首个太空计算卫星星座成功入轨.png?height=200&width=300",
+            image: "/national/5月15日 央视新闻 首个太空计算卫星星座成功入轨.png?height=200&width=300",
             pic_pos: "",
             link: "https://news.cctv.cn/2025/05/14/ARTIUZdgvS22TlXHq8tT9YP9250514.shtml",
             ifDocument: true,
-            ifVideo: false
+            ifVideo: false,
+            ifArticle: false,articleId:undefined
         }
         ,
         {
             id: 10,
             date: "5月15日 新华每日电讯",
             title: "首个太空计算卫星星座成功入轨 中国星座点亮“AI”星云",
-            image: "/国家级媒体报道/5月15日 新华每日电讯 具备太空在轨计算能力.png?height=200&width=300",
+            image: "/national/5月15日 新华每日电讯 具备太空在轨计算能力.png?height=200&width=300",
             pic_pos: "",
             link: "https://h.xinhuaxmt.com/vh512/share/12540405?docid=12540405&newstype=1001&d=134ff92&channel=weixin&time=1747217982931",
             ifDocument: true,
-            ifVideo: false
+            ifVideo: false,
+            ifArticle: false,articleId:undefined
         }
         ,
         {
             id: 11,
             date: "5月15日 环球时报",
             title: "把人工智能送上天， 我国发射首个太空计算星座",
-            image: "/国家级媒体报道/5月15日 环球时报 把人工智能送上天.jpg?height=200&width=300",
+            image: "/national/5月15日 环球时报 把人工智能送上天.jpg?height=200&width=300",
             pic_pos: "",
             link: "https://china.huanqiu.com/article/4MgHWUO34As",
             ifDocument: true,
-            ifVideo: false
+            ifVideo: false,
+            ifArticle: false,articleId:undefined
         }
         ,
         {
             id: 12,
             date: "5月16日 经济参考报",
             title: "太空计算星座成功入轨，意味着什么？",
-            image: "/国家级媒体报道/5月16日 经济参考报 太空计算星座成功入轨 意味着什么.png?height=200&width=300",
+            image: "/national/5月16日 经济参考报 太空计算星座成功入轨 意味着什么.png?height=200&width=300",
             pic_pos: "",
             link: "https://www.xinhuanet.com/tech/20250516/3cbe4b97134542a49ddd696d491119c3/c.html",
             ifDocument: true,
-            ifVideo: false
+            ifVideo: false,
+            ifArticle: false,articleId:undefined
         }
         ,
         {
             id: 13,
             date: "5月18日 经济日报",
             title: "人工智能开启太空经济新格局",
-            image: "/国家级媒体报道/5月18日 经济日报 人工智能开启太空经济新格局.png?height=200&width=300",
+            image: "/national/5月18日 经济日报 人工智能开启太空经济新格局.png?height=200&width=300",
             pic_pos: "",
             link: "http://www.ce.cn/xwzx/gnsz/gdxw/202505/18/t20250518_39360861.shtml",
             ifDocument: true,
-            ifVideo: false
+            ifVideo: false,
+            ifArticle: false,articleId:undefined
         },
         {
             id: 14,
             date: "5月19日 中国青年报",
             title: "算力飞上天——记浙江省之江实验室三体计算星座科研团队",
-            image: "/国家级媒体报道/5月19日 中国青年报 算力飞上天.png?height=200&width=300",
+            image: "/national/5月19日 中国青年报 算力飞上天.png?height=200&width=300",
             pic_pos: "",
             link: "https://zqb.cyol.com/pc/content/202505/19/content_411109.html",
             ifDocument: true,
-            ifVideo: false
+            ifVideo: false,
+            ifArticle: false,articleId:undefined
         }
         ,
         {
             id: 15,
             date: "5月19日 科技日报",
             title: "“三体计算星座”为啥把计算送上天",
-            image: "/国家级媒体报道/5月19日 科技日报 三体计算星座为啥把计算送上天.png?height=200&width=300",
+            image: "/national/5月19日 科技日报 三体计算星座为啥把计算送上天.png?height=200&width=300",
             pic_pos: "",
             link: "https://digitalpaper.stdaily.com/http_www.kjrb.com/kjrb/html/2025-05/19/content_588771.htm?div=-1",
             ifDocument: true,
-            ifVideo: false
+            ifVideo: false,
+            ifArticle: false,articleId:undefined
         }
         ,
         {
             id: 16,
             date: "5月20日 中国新闻网",
             title: "探秘之江实验室“三体计算星座”：展示国际协作生态",
-            image: "/国家级媒体报道/5月20日 中国新闻网 揭秘之江实验室三体计算星座.png?height=200&width=300",
+            image: "/national/5月20日 中国新闻网 揭秘之江实验室三体计算星座.png?height=200&width=300",
             pic_pos: "",
             link: "https://www.chinanews.com.cn/sh/shipin/cns/2025/05-23/news1021200.shtml",
             ifDocument: false,
             ifVideo: true,
-            videoPath: "/videos/video2.mp4"
+            videoPath: "/videos/video2.mp4",
+            ifArticle: false,articleId:undefined
         }
     ]
 
@@ -334,7 +401,7 @@ export default function HomePage() {
                     <div
                         className="
                           absolute inset-0
-                          bg-[url('/封面图片/背景.jpg')]
+                          bg-[url('/cover/背景.jpg')]
                           bg-cover bg-center
                           opacity-50
                         "
@@ -386,6 +453,7 @@ export default function HomePage() {
                                 {/* 二维码 */}
                                 <div className="w-24 h-24 mt-10">
                                     <Image
+                                        priority={true}
                                         src="/homepage_qrcode.png"
                                         alt="联系我们二维码"
                                         width={80} height={80}
@@ -399,7 +467,8 @@ export default function HomePage() {
                         <div className="relative w-full lg:w-4/5 mx-auto mt-8 lg:mt-0">
                             <div className="relative rounded-2xl overflow-hidden shadow-2xl">
                                 <Image
-                                    src="/封面图片/前景.jpg"
+                                    priority={true}
+                                    src="/cover/前景.jpg"
                                     alt="太空计算星座发射场景"
                                     width={700}
                                     height={500}
@@ -420,14 +489,14 @@ export default function HomePage() {
                             <div
                                 key={item.id}
                                 className="…cursor-pointer"
-                                onClick={() => {
-                                    setReaderPayload({
-                                        link:      item.link,
-                                        ifDocument:item.ifDocument,
-                                        ifVideo:   item.ifVideo,
-                                        videoPath: item.videoPath
-                                    })
-                                }}
+                                onClick={() => setReaderPayload({
+                                    link:       item.link,
+                                    ifDocument: item.ifDocument ?? false,
+                                    ifVideo:    item.ifVideo    ?? false,
+                                    videoPath:  item.videoPath,
+                                    ifArticle:  item.ifArticle  ?? false,
+                                    articleId:  item.ifArticle  ? item.articleId : undefined
+                                })}
                             >
                                 <Card key={item.id}
                                       className="group hover:shadow-xl transition-all duration-300 cursor-pointer">
@@ -482,12 +551,17 @@ export default function HomePage() {
                     <h2 className="text-4xl font-bold text-center text-gray-900 mb-16">省级媒体报道</h2>
                     <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
                         {provincialNews.map((item) => (
-                            <a
+                            <div
                                 key={item.id}
-                                href={item.link}
-                                target="_blank"
-                                rel="noopener noreferrer"
-                                className="block group hover:shadow-xl transition-all duration-300 cursor-pointer"
+                                className="…cursor-pointer"
+                                onClick={() => setReaderPayload({
+                                    link:       item.link,
+                                    ifDocument: item.ifDocument ?? false,
+                                    ifVideo:    item.ifVideo    ?? false,
+                                    videoPath:  item.videoPath,
+                                    ifArticle:  item.ifArticle  ?? false,
+                                    articleId:  item.ifArticle  ? item.articleId : undefined
+                                })}
                             >
                                 <Card key={item.id}
                                       className="group hover:shadow-xl transition-all duration-300 cursor-pointer">
@@ -513,7 +587,7 @@ export default function HomePage() {
                                         </div>
                                     </CardContent>
                                 </Card>
-                            </a>
+                            </div>
                         ))}
                     </div>
                     <div className="text-center mt-12">
@@ -596,22 +670,20 @@ export default function HomePage() {
                 </div>
             </footer>
             {readerPayload && (
-                // 2. 点击遮罩层也能关闭
                 <div
                     className="fixed inset-0 z-50 flex items-center justify-center bg-black/50"
                     onClick={() => setReaderPayload(null)}
                 >
-                    {/* 3. 点击内容不冒泡到外层遮罩 */}
                     <div
                         className="relative w-[90vw] h-[90vh] bg-white rounded-lg overflow-hidden shadow-2xl"
                         onClick={e => e.stopPropagation()}
                     >
-                        {/* 关闭按钮 */}
                         <button
-                            className="absolute bottom-8 sm:bottom-12 lg:bottom-16 right-2 sm:right-4 lg:right-6
-                         z-10 p-2 bg-black/30 rounded-full text-white"
+                            className="absolute bottom-8 sm:bottom-12 lg:bottom-16 right-4 z-10 p-2 bg-black/30 rounded-full text-white"
                             onClick={() => setReaderPayload(null)}
-                        >✕</button>
+                        >
+                            ✕
+                        </button>
 
                         {/* 文档模式 */}
                         {readerPayload.ifDocument && (
@@ -625,14 +697,20 @@ export default function HomePage() {
                         {/* 视频模式 */}
                         {readerPayload.ifVideo && readerPayload.videoPath && (
                             <video
-                                controls
-                                autoPlay
+                                controls autoPlay
                                 poster={readerPayload.videoPath}
                                 className="w-full h-full bg-black"
                             >
                                 <source src={readerPayload.videoPath} type="video/mp4" />
-                                您的浏览器不支持 video 标签
                             </video>
+                        )}
+
+                        {/* 文章模式 */}
+                        {readerPayload.ifArticle && readerPayload.articleId && (
+                            <iframe
+                                src={`/wechat_article/article${readerPayload.articleId}/index.html`}
+                                className="w-full h-full"
+                            />
                         )}
                     </div>
                 </div>
